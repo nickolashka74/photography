@@ -1,0 +1,26 @@
+.title {
+    font-family: "Trirong", serif;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1;
+    color: #2b2d5c;
+
+    &--clients {
+        color: #fff;
+    }
+
+    &--blog {
+        text-align: center;
+    }
+
+    &--work {
+        color: #fff;
+        text-align: center;
+    }
+}
+
+@media (max-width: 575px) {
+    .title {
+        line-height: 1.5;
+    }
+}

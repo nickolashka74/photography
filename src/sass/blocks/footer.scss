@@ -1,0 +1,41 @@
+.footer {
+    padding: 40px 0 0;
+    background-color: $lilac;
+    border-top: 1px solid #55577d;
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 30px;
+    }
+
+    &__item {
+        margin-top: 50px;
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 1.9;
+        color: #fff;
+        text-transform: capitalize;
+
+        &--contact {
+            margin-top: 35px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+
+    &__copyright {
+        padding: 10px 0;
+        font-size: 14px;
+        font-weight: 200;
+        font-stretch: normal;
+        line-height: 2.7;
+        color: rgba(255, 255, 255, 0.25);
+        text-align: center;
+        border-top: 1px solid #55577d;
+    }
+}

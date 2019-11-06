@@ -1,0 +1,46 @@
+/* Variables */
+@import 'vars';
+
+/* Normalize */
+@import 'normalize';
+
+/* Fonts */
+@import 'fonts';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 320px;
+    max-width: 1600px;
+    margin: 0 auto;
+    font-family: "Muli", sans-serif;
+}
+
+.container {
+    position: relative;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* Blocks */
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/logo';
+@import 'blocks/menu';
+@import 'blocks/btn';
+@import 'blocks/social';
+@import 'blocks/about';
+@import 'blocks/title';
+@import 'blocks/clients';
+@import 'blocks/portfolio';
+@import 'blocks/blog';
+@import 'blocks/work';
+@import 'blocks/form';
+@import 'blocks/footer';
+@import 'blocks/contact';
+@import 'blocks/posts';
+@import 'blocks/footer-menu';
+@import 'blocks/insta';

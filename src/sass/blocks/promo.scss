@@ -1,0 +1,153 @@
+.promo {
+    padding-top: 65px;
+    background: url('../img/bg/promo.jpg') center center/cover no-repeat;
+
+    &__title {
+        display: none;
+    }
+
+    &__header {
+        margin-top: 260px;
+        font-family: 'Trirong', serif;
+        font-size: 60px;
+        font-weight: 300;
+        line-height: 70px;
+        color: #fff;
+
+        &::before,
+        &::after {
+            position: absolute;
+            content: '';
+            background-color: #fff;
+        }
+
+        &::before {
+            top: 80px;
+            left: 76px;
+            width: 1px;
+            height: 124px;
+        }
+
+        &::after {
+            top: 142px;
+            left: 15px;
+            width: 125px;
+            height: 1px;
+        }
+    }
+
+    &__subheader {
+        margin: 30px 0 50px;
+        font-size: 20px;
+        font-weight: 200;
+        color: #fff;
+    }
+
+    &__footer {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        padding: 30px 100px;
+        margin-top: 165px;
+
+        &::before,
+        &::after {
+            position: absolute;
+            content: '';
+            background-color: #fff;
+        }
+
+        &::before {
+            right: 0;
+            bottom: 90px;
+            width: 382px;
+            height: 1px;
+        }
+
+        &::after {
+            right: 295px;
+            bottom: 0;
+            width: 1px;
+            height: 182px;
+        }
+    }
+
+    &__arrow {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        display: block;
+        width: 31px;
+        height: 27px;
+        transform: translateX(-50%);
+    }
+
+    &__icon {
+        display: block;
+        width: 31px;
+        height: 27px;
+    }
+}
+
+@media (max-width: 991px) {
+    .promo {
+        &__arrow {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .promo {
+        padding-top: 50px;
+
+        &__header {
+            margin-top: 100px;
+
+            &::before,
+            &::after {
+                display: none;
+            }
+        }
+
+        &__footer {
+            margin-top: 100px;
+
+            &::before,
+            &::after {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .promo {
+        &__footer {
+            justify-content: flex-start;
+            padding: 30px 15px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .promo {
+        padding-top: 30px;
+
+        &__header {
+            margin-top: 60px;
+            font-size: 50px;
+            line-height: 60px;
+        }
+
+        &__subheader {
+            margin: 15px 0 40px;
+            font-size: 18px;
+        }
+
+        &__footer {
+            padding: 0 15px 30px;
+            margin-top: 60px;
+        }
+    }
+}

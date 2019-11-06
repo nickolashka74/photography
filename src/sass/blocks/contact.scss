@@ -1,0 +1,28 @@
+.contact {
+    flex-basis: 17%;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #fff;
+
+    &__address {
+        margin-top: 10px;
+    }
+
+    &__email {
+        display: block;
+        margin-bottom: 35px;
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__text {
+        margin-bottom: 5px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+}

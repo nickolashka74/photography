@@ -1,0 +1,37 @@
+.logo {
+    &__icon {
+        width: 28px;
+        height: 28px;
+        fill: #fff;
+    }
+
+    &__text {
+        margin-left: 5px;
+        font-size: 20px;
+        font-weight: 900;
+        color: #fff;
+        text-transform: uppercase;
+        vertical-align: bottom;
+    }
+
+    &__link {
+        display: block;
+        text-decoration: none;
+
+        &:hover {
+            .logo__icon {
+                fill: $yellow;
+            }
+
+            .logo__text {
+                color: $yellow;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .logo {
+        margin-bottom: 25px;
+    }
+}

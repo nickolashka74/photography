@@ -1,0 +1,126 @@
+.btn {
+    display: block;
+    width: 220px;
+    height: 60px;
+    font-size: 16px;
+    font-weight: 600;
+    color: $lilac;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: $yellow;
+    border: none;
+    border-radius: 30px;
+    transition: background-color .3s linear, color .3s linear;
+
+    &--promo {
+        font-weight: 400;
+        text-transform: capitalize;
+
+        &:hover {
+            background-color: darken($color: $yellow, $amount: 10);
+        }
+    }
+
+    &--about {
+        width: 285px;
+        height: 65px;
+        font-size: 14px;
+        color: #fff;
+        background-color: $lilac;
+
+        &:hover {
+            color: $yellow;
+            background-color: lighten($color: $lilac, $amount: 10);
+        }
+    }
+
+    &--portfolio {
+        position: absolute;
+        bottom: 135px;
+        left: 36.5%;
+        height: 50px;
+        color: $yellow;
+        background-color: transparent;
+        border: 1px solid $yellow;
+        border-radius: 25px;
+
+        @media (max-width: 1599px) {
+            bottom: 85px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        @media (max-width: 904px) {
+            bottom: 50px;
+        }
+
+        @media (max-width: 633px) {
+            bottom: 30px;
+        }
+
+        &:hover {
+            color: $lilac;
+            background-color: $yellow;
+        }
+    }
+
+    &--work {
+        position: relative;
+        width: 200px;
+        height: 50px;
+        margin: 0 auto;
+        margin-top: 35px;
+        font-size: 15px;
+        font-weight: 300;
+
+        span {
+            display: inline-block;
+            transition: all .3s ease;
+            //z-index: 2;
+        }
+
+        &::before,
+        &::after {
+            position: absolute;
+            display: block;
+            content: "";
+            opacity: 0;
+            transition: all .3s ease;
+        }
+
+        &::before {
+            top: 20px;
+            right: 30px;
+            width: 6px;
+            height: 6px;
+            background: transparent;
+            border-top: 2px solid;
+            border-right: 2px solid;
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            top: 23px;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: $lilac;
+        }
+
+        &:hover {
+            span {
+                transform: translateX(-10px);
+            }
+
+            &::before {
+                opacity: 1;
+            }
+
+            &::after {
+                width: 14px;
+                opacity: 1;
+                transform: translateX(155px);
+            }
+        }
+    }
+}

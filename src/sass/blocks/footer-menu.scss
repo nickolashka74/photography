@@ -1,0 +1,20 @@
+.footer-menu {
+    margin-top: 40px;
+
+    &__list {
+        margin-top: 15px;
+        list-style: none;
+    }
+
+    &__link {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 2.1;
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

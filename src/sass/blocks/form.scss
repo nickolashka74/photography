@@ -1,0 +1,49 @@
+.form {
+    margin-top: 50px;
+
+    &__group {
+        position: relative;
+
+        label {
+            position: absolute;
+            top: 15px;
+            left: 25px;
+            transition: all .5s linear;
+        }
+
+        textarea {
+            height: 90px;
+            resize: none;
+            outline: none;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 15px 25px;
+            font-size: 15px;
+            font-weight: 300;
+            color: $lilac;
+            background-color: #b6b7c7;
+            border: none;
+        }
+
+        input {
+            &:focus + label {
+                font-size: 14px;
+                color: $yellow;
+                transform: translateY(-35px);
+            }
+
+            &:valid + label {
+                font-size: 14px;
+                color: #393;
+                transform: translateY(-35px);
+            }
+        }
+    }
+
+    &__group + &__group {
+        margin-top: 25px;
+    }
+}
