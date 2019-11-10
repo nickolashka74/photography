@@ -1,5 +1,5 @@
 .posts {
-    flex-basis: 31.6%;
+    flex-basis: 32%;
     margin-top: 40px;
 
     &__item {
@@ -10,8 +10,9 @@
 
     &__picture {
         display: block;
-        flex-basis: 70px;
+        width: 70px;
         height: 60px;
+        margin-right: 30px;
     }
 
     &__img {
@@ -21,7 +22,7 @@
     }
 
     &__info {
-        flex-basis: 74%;
+        width: 265px;
         color: #fff;
     }
 
@@ -55,6 +56,36 @@
 
         &:hover {
             text-decoration: underline;
+        }
+    }
+}
+
+@media (max-width: 1020px) {
+    .posts {
+        order: 1;
+    }
+}
+
+@media (max-width: 590px) {
+    .posts {
+        order: 0;
+
+        &__item {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        &__picture {
+            margin: 0;
+        }
+
+        &__info {
+            margin-top: 15px;
+        }
+
+        &__link {
+            margin: 10px auto 0;
         }
     }
 }

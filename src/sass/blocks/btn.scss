@@ -32,6 +32,10 @@
             color: $yellow;
             background-color: lighten($color: $lilac, $amount: 10);
         }
+
+        @media (max-width: 1350px) {
+            margin: 0 auto;
+        }
     }
 
     &--portfolio {

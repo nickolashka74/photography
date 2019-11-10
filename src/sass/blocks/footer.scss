@@ -17,7 +17,7 @@
     &__title {
         font-size: 24px;
         font-weight: 300;
-        line-height: 1.9;
+        line-height: 1.5;
         color: #fff;
         text-transform: capitalize;
 
@@ -37,5 +37,37 @@
         color: rgba(255, 255, 255, 0.25);
         text-align: center;
         border-top: 1px solid #55577d;
+    }
+}
+
+@media (max-width: 1020px) {
+    .footer {
+        &__item {
+            margin: 50px 20px 0;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .footer {
+        padding: 0;
+    }
+}
+
+@media (max-width: 590px) {
+    .footer {
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__item {
+            margin: 0;
+            text-align: center;
+        }
+
+        &__title--contact {
+            margin-top: 0;
+        }
     }
 }

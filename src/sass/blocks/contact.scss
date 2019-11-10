@@ -26,3 +26,13 @@
         font-weight: 600;
     }
 }
+
+@media (max-width: 590px) {
+    .contact {
+        margin-top: 40px;
+
+        &__email {
+            margin-bottom: 15px;
+        }
+    }
+}

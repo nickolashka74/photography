@@ -18,3 +18,15 @@
         }
     }
 }
+
+@media (max-width: 670px) {
+    .footer-menu {
+        order: 2;
+    }
+}
+
+@media (max-width: 590px) {
+    .footer-menu {
+        order: 0;
+    }
+}

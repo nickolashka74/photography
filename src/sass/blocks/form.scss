@@ -26,20 +26,7 @@
             color: $lilac;
             background-color: #b6b7c7;
             border: none;
-        }
-
-        input {
-            &:focus + label {
-                font-size: 14px;
-                color: $yellow;
-                transform: translateY(-35px);
-            }
-
-            &:valid + label {
-                font-size: 14px;
-                color: #393;
-                transform: translateY(-35px);
-            }
+            outline: none;
         }
     }
 

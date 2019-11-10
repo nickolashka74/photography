@@ -26,3 +26,12 @@
         }
     }
 }
+
+@media (max-width: 590px) {
+    .social {
+        &--contact {
+            justify-content: center;
+            margin: 0 auto;
+        }
+    }
+}
