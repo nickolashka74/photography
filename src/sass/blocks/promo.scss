@@ -2,6 +2,10 @@
     padding-top: 65px;
     background: url('../img/bg/promo.jpg') center center/cover no-repeat;
 
+    @media (min-width: 992px) {
+        min-height: 100vh;
+    }
+
     &__title {
         display: none;
     }
@@ -80,6 +84,9 @@
         width: 31px;
         height: 27px;
         transform: translateX(-50%);
+        animation-name: slideInDown;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
     }
 
     &__icon {

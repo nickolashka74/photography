@@ -80,5 +80,9 @@
     .clients {
         padding: 30px 0;
         margin: 30px 0;
+
+        &__link {
+            margin-top: 10px;
+        }
     }
 }

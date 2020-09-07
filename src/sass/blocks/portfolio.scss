@@ -130,6 +130,10 @@
         opacity: 0;
         transition: opacity .3s linear;
         transform: translate(-50%, 5%);
+
+        @media (max-width: 992px) {
+            opacity: 1;
+        }
     }
 
     &__icon {
@@ -175,20 +179,22 @@
             transition: opacity .3s linear;
         }
 
-        &:hover {
-            &::before {
-                opacity: 1;
-            }
-
-            .portfolio__cross {
-                &::before,
-                &::after {
+        @media (min-width: 992px) {
+            &:hover {
+                &::before {
                     opacity: 1;
                 }
-            }
 
-            .portfolio__box {
-                opacity: 1;
+                .portfolio__cross {
+                    &::before,
+                    &::after {
+                        opacity: 1;
+                    }
+                }
+
+                .portfolio__box {
+                    opacity: 1;
+                }
             }
         }
     }
